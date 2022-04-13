@@ -51,7 +51,7 @@ public class AppEntradas {
     System.out.println("[4.] CANTIDAD RECAUDADA");
     System.out.println("[5.] SALIR ");
     System.out.println("\n******************************\n");
-    System.out.println("[Elija la opción]");
+    System.out.println("[Elija la opciÃ³n]");
     
     int opcion = sc.nextInt();
     
@@ -90,7 +90,7 @@ public class AppEntradas {
                                     }
                                     entradasDisponibles = entradasDisponibles - cantidadEntradas;
                                     entradasVendidas = entradasVendidas + cantidadEntradas;
-                                    cantidadRecaudada = 5000 * entradasVendidas;
+                                    cantidadRecaudada = precio * entradasVendidas; // CORRECCION SOLICITADA EN REVISION
                                     
                                     System.out.println("QUEDAN " + entradasDisponibles + " entradas.");
                                     
